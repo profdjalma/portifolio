@@ -136,14 +136,14 @@ nav a:hover{
 
 /* Formatação do section web*/
 
-.web, .office, .design{
+.web, .office, .design, .formulario{
     background: var(--bg-color);
     color: #fff;
     padding: 70px;
     margin: 0 auto;
 }
 
-.web h2, .office h2, .design h2{
+.web h2, .office h2, .design h2, .formulario h2{
   text-align: center;
 }
 
@@ -188,6 +188,32 @@ nav a:hover{
 
 .rodape p{
   font-size: 14px;
+}
+
+/* Formatação Formulario */
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+input{
+  padding: 15px;
+  border-radius: 8px;
+  border:none;
+  outline-color: var(--text-color);
+}
+
+button{
+  background-color: var(--text-color);
+  padding: 15px;
+  color: var(--details);
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 8px;
 }
 
 /* Media Queries */
