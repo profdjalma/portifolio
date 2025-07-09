@@ -275,24 +275,24 @@ textarea{
 
 
 /* Dispositivos médios (tablets)*/
-@media (max-width: 768px) {
+@media (max-width:768px){
 
     nav ul{
       flex-direction: column;
     }
 
-    .topo{
+ .topo{
       width:100%;
       margin: 0 auto;
       margin-top:200px;
     }
 
-    .topo img{
+ .topo img{
       width:150px;
       height:150px;
     }
 
-    .topo h2{
+ .topo h2{
       font-size: 1.2rem;
       width:600px;
     }
@@ -330,24 +330,19 @@ textarea{
 
 }
 
-/* Dispositivos grandes (laptops e desktops)
-@media (min-width: 769px) and (max-width: 1200px) {
-    body {
-        font-size: 18px;
-    }
+/* Dispositivos grandes (Celulares)*/
+@media (max-width: 420px) {
+  nav{
+  display:flex;
+  justify-content: flex-start;
+  }
 
-    header h1 {
-        font-size: 2.5rem;
-    }
-}
+   .topo{
+    background: red;
+  }
 
-/* Dispositivos extra grandes (desktops maiores)
-@media (min-width: 1201px) {
-    body {
-        font-size: 20px;
-    }
-
-    header h1 {
-        font-size: 3rem;
-    }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
 }
