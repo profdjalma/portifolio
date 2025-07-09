@@ -252,8 +252,8 @@ textarea{
 
 /* Media Queries */
 
-/* Dispositivos pequenos (smartphones em modo retrato) */
-@media (max-width: 1024px) {
+/* Dispositivos (smartphones em modo retrato) */
+@media (max-width: 992px) {
 
    .topo{
         padding-top: 100px;
@@ -342,8 +342,8 @@ textarea{
 
 }
 
-/* Dispositivos grandes (Celulares)*/
-@media (max-width: 365px) {
+/* Dispositivos  (Celulares)*/
+@media (max-width: 576px) {
   nav{
   display:flex;
   justify-content: flex-start;
@@ -354,6 +354,13 @@ textarea{
     justify-content: center;
   }
 
+  form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
 
 }
