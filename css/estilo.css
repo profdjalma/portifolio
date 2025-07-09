@@ -19,6 +19,7 @@
 
 html, body {
     height: 100%;
+    font-size: 1rem;
     font-family: "DM Sans", sans-serif;
     scroll-behavior: smooth;
 }
@@ -60,27 +61,28 @@ nav ul{
 
 nav li{
   display: flex;
-  gap: 20px;
+  gap:30px;
 }
 
 nav a{
   color: var(--branco);
   font-weight: 700;
-  padding: 15px;
-  transition: 1s;
+  padding: 1.5rem;
+  transition: 2s;
 }
 
 nav a:hover{
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding:15px;
+  padding:1.5rem;
 }
 
 /* Formatação do Main */
  .topo{
     background: var(--bg-color);
+    width:100%;
     min-height: auto;
-    padding:6rem 0;
+    padding:7rem 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -91,23 +93,23 @@ nav a:hover{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    border: 4px solid var(--details);
+    outline: 4px solid var(--text-color);
     animation: imagem 2s;
 }
 
 .topo h1{
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--text-color);
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .topo span{
     color: var(--branco);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .topo h2{
-    font-size: 24px;
+    font-size: 1.5rem;
     width:50rem;
     margin-top: 10px;
     color: var(--branco);
@@ -136,7 +138,7 @@ nav a:hover{
 
 .topo i{
     color:var(--details);
-    font-size: 28px;
+    font-size: 2rem;
 }
 
 /* Formatação do section web*/
@@ -145,28 +147,33 @@ nav a:hover{
     background: var(--bg-color);
     color: #fff;
     padding: 70px;
+    width:100%;
     margin: 0 auto;
 }
 
 .web h2, .office h2, .design h2, .formulario h2{
   text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom:3rem;
 }
 
  .container{
     display: flex;
+    justify-content: center;
 }
 
  .container .bloco{
-    width: 33%;
-    border: solid 1px var(--details);
+    border: solid 2px var(--text-color);
     margin: 40px 20px;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
+    background-color: #000;
 }
 
 .container .bloco h3{
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -177,33 +184,14 @@ nav a:hover{
     border-radius: 10px;
 }
 
-/* Formatação rodape */
-
-.rodape{
-    text-align: center;
-    color: var(--branco);
-    background-color: var(--text-color);
-    padding: 10px;
-}
-
-.rodape img{
-    width: 50px;
-    filter: drop-shadow(1px 1px 5px #333);
-}
-
-.rodape p{
-  font-size: 14px;
-}
-
 /* Formatação Formulario */
 
 form{
   display: flex;
   flex-direction: column;
   gap:10px;
-  width: 600px;
+  width: 50%;
   margin: 0 auto;
-  font-family: "DM Sans", sans-serif;
 }
 
 input{
@@ -228,6 +216,26 @@ textarea{
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
 }
+
+
+/* Formatação rodape */
+
+.rodape{
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--text-color);
+    padding: 10px;
+}
+
+.rodape img{
+    width: 50px;
+    filter: drop-shadow(1px 1px 5px #333);
+}
+
+.rodape p{
+  font-size: 14px;
+}
+
 
 /* ANIMAÇÕES */
 
@@ -341,19 +349,11 @@ textarea{
   justify-content: flex-start;
   }
 
-   .topo{
-    background: red;
-  }
-
   .container{
     display: flex;
     justify-content: center;
   }
 
-  .formulario{
-    width:100%;
-    margin: 0 auto;
-    padding:10px;
-  }
+
 
 }
