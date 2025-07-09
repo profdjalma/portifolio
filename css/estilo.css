@@ -247,7 +247,6 @@ textarea{
 /* Dispositivos pequenos (smartphones em modo retrato) */
 @media (max-width: 1024px) {
 
-
    .topo{
         padding-top: 100px;
     }
@@ -276,6 +275,11 @@ textarea{
 
 /* Dispositivos médios (tablets)*/
 @media (max-width:768px){
+
+  nav{
+  display:flex;
+  justify-content: flex-start;
+  }
 
     nav ul{
       flex-direction: column;
@@ -331,7 +335,7 @@ textarea{
 }
 
 /* Dispositivos grandes (Celulares)*/
-@media (max-width: 420px) {
+@media (max-width: 365px) {
   nav{
   display:flex;
   justify-content: flex-start;
@@ -345,4 +349,11 @@ textarea{
     display: flex;
     justify-content: center;
   }
+
+  .formulario{
+    width:100%;
+    margin: 0 auto;
+    padding:10px;
+  }
+
 }
