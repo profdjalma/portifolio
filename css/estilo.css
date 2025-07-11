@@ -253,7 +253,7 @@ textarea{
 /* Media Queries */
 
 /* Dispositivos  (Celulares)*/
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
 
 header{
   height:350px;
@@ -306,7 +306,7 @@ nav ul{
 
 
 /* Dispositivos (smartphones em modo retrato)*/
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
 
   header{
     height:350px;
@@ -358,7 +358,7 @@ nav ul{
   }
 
 /* Dispositivos largos (tablets)*/
-@media (min-width: 1150px) {
+@media screen and (min-width: 1150px) {
 
   header{
     width:100%;
@@ -382,7 +382,7 @@ nav ul{
     margin:70px 0 0 0;
     display: flex;
     justify-content: center;
-    padding:80px;
+    padding:50px;
   }
 
   .topo img{
