@@ -253,7 +253,7 @@ textarea{
 /* Media Queries */
 
 /* Dispositivos  (Celulares)*/
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
 header{
   height:350px;
